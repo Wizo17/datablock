@@ -39,7 +39,7 @@
                         <Image url="@icons/cash_icon.png" />
                      </image>
                   </ImageView>
-                  <Label alignment="CENTER" layoutX="213.0" layoutY="222.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="74.0" text="34.7" textFill="#ff6007">
+                  <Label alignment="CENTER" layoutX="200.0" layoutY="222.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="74.0" text="57,700" textFill="#ff6007">
                      <font>
                         <Font name="SansSerif Regular" size="24.0" />
                      </font>
@@ -49,12 +49,12 @@
                         <Font name="SansSerif Regular" size="18.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" layoutX="284.0" layoutY="222.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="52.0" text="Btc">
+                  <Label alignment="CENTER" layoutX="284.0" layoutY="222.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="112.0" text="XOF CFA">
                      <font>
                         <Font name="SansSerif Regular" size="24.0" />
                      </font>
                   </Label>
-                  <JFXButton buttonType="RAISED" layoutX="67.0" layoutY="350.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="200.0" ripplerFill="WHITE" styleClass="home-button" text="Envoyé" textFill="WHITE">
+                  <JFXButton buttonType="RAISED" layoutX="67.0" layoutY="350.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="200.0" ripplerFill="WHITE" styleClass="home-button" text="Envoyer" textFill="WHITE">
                      <font>
                         <Font name="SansSerif Regular" size="20.0" />
                      </font>
@@ -82,7 +82,7 @@
             </Pane>
             <Pane fx:id="pan_trans" prefHeight="495.0" prefWidth="549.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <Label layoutX="23.0" layoutY="22.0" text="Transaction" textFill="#09a428">
+                  <Label layoutX="23.0" layoutY="22.0" text="Transactions" textFill="#09a428">
                      <font>
                         <Font name="SansSerif Regular" size="24.0" />
                      </font>
@@ -98,7 +98,7 @@
                </children></Pane>
             <Pane fx:id="pan_file" prefHeight="495.0" prefWidth="549.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <JFXButton layoutX="117.0" layoutY="22.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="200.0" ripplerFill="WHITE" style="-fx-border-color: #ff6007;" text="IMPORT CONFIG" textFill="#ff6007">
+                  <JFXButton layoutX="87.0" layoutY="22.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="230.0" ripplerFill="WHITE" style="-fx-border-color: #ff6007;" text="IMPORTER LES CONFIG" textFill="#ff6007">
                      <font>
                         <Font name="SansSerif Bold" size="16.0" />
                      </font>
@@ -125,6 +125,157 @@
                   </TableView>
                </children>
             </Pane>
+            <Pane fx:id="pan_host" prefHeight="495.0" prefWidth="549.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="229.0" layoutY="21.0" prefHeight="41.0" prefWidth="241.0" style="-fx-background-color: #09a428; -fx-border-width: 1; -fx-border-radius: 7;" text="Stockage (376192)" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="SansSerif Regular" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="481.0" layoutY="21.0" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: #09a428; -fx-border-width: 1; -fx-border-radius: 7;" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="SansSerif Regular" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/icons8_Settings_104px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <Label layoutX="29.0" layoutY="100.0" text="Adresse">
+                     <font>
+                        <Font name="SansSerif Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField editable="false" layoutX="29.0" layoutY="124.0" prefHeight="40.0" prefWidth="491.0" text="f7ff9e8b7bb2e09b70935a54d5efd785e0cc5d9d0abf0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label layoutX="31.0" layoutY="190.0" text="Espace alloué : 100 GB">
+                     <font>
+                        <Font name="SansSerif Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="357.0" layoutY="192.0" text="Espace utilisé : 39.933 GB">
+                     <font>
+                        <Font name="SansSerif Regular" size="14.0" />
+                     </font>
+                  </Label>
+                  <ProgressBar layoutX="30.0" layoutY="220.0" prefHeight="40.0" prefWidth="491.0" progress="0.38" />
+                  <Label layoutX="31.0" layoutY="303.0" text="Pairs">
+                     <font>
+                        <Font name="SansSerif Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="207.0" layoutY="303.0" text="Contracts">
+                     <font>
+                        <Font name="SansSerif Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="386.0" layoutY="303.0" text="Dernières activité">
+                     <font>
+                        <Font name="SansSerif Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField alignment="CENTER" editable="false" layoutX="25.0" layoutY="341.0" prefHeight="30.0" prefWidth="81.0" text="99">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField alignment="CENTER" editable="false" layoutX="201.0" layoutY="341.0" prefHeight="30.0" prefWidth="112.0" text="103466">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField alignment="CENTER" editable="false" layoutX="386.0" layoutY="341.0" prefHeight="30.0" prefWidth="133.0" text="26/7/2018 7:45">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton layoutX="30.0" layoutY="405.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="491.0" ripplerFill="WHITE" style="-fx-border-color: #ff6007;" text="DATABLOCK HOSTING EST EN COURS D'EXECUTION" textFill="#ff6007">
+                     <font>
+                        <Font name="SansSerif Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="232.0" layoutY="456.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" ripplerFill="WHITE" text="Voir les logs" textFill="#09a428">
+                     <font>
+                        <Font name="SansSerif Regular" size="11.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane fx:id="pan_smct" prefHeight="495.0" prefWidth="549.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <TableView layoutX="12.0" layoutY="68.0" prefHeight="322.0" prefWidth="525.0">
+                    <columns>
+                      <TableColumn prefWidth="27.0" />
+                      <TableColumn prefWidth="55.0" />
+                        <TableColumn prefWidth="143.0" text="Token" />
+                        <TableColumn prefWidth="75.0" text="Price" />
+                        <TableColumn prefWidth="75.0" text="Change" />
+                        <TableColumn prefWidth="75.0" text="Volume" />
+                        <TableColumn prefWidth="75.0" text="MarketCap" />
+                    </columns>
+                  </TableView>
+                  <JFXTextField layoutX="237.0" layoutY="23.0" prefHeight="30.0" prefWidth="189.0" promptText="Rechercher par Token ou nom">
+                     <font>
+                        <Font name="SansSerif Regular" size="12.0" />
+                     </font></JFXTextField>
+                  <JFXButton layoutX="437.0" layoutY="23.0" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #88c425;" text="Rechercher" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/icons8_Search_104px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="385.0" layoutY="419.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="150.0" ripplerFill="WHITE" styleClass="home-button" text="Aide" textFill="WHITE">
+                     <font>
+                        <Font name="SansSerif Regular" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/icons8_Help_100px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="225.0" layoutY="419.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="150.0" ripplerFill="WHITE" styleClass="home-button" text="Démarrer" textFill="WHITE">
+                     <font>
+                        <Font name="SansSerif Regular" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/icons8_Start_100px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="63.0" layoutY="419.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="150.0" ripplerFill="WHITE" styleClass="home-button" text="Créer" textFill="WHITE">
+                     <font>
+                        <Font name="SansSerif Regular" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/icons8_Plus_Math_104px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </Pane>
          </children></AnchorPane>
       <JFXDrawer fx:id="drawer" prefHeight="540.0" prefWidth="230.0" style="-fx-background-color: #f0f0f0;" styleClass="trans-pane">
          <children>
@@ -134,7 +285,7 @@
                      <graphic>
                         <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@icons/bitcoin_logo.png" />
+                              <Image url="@icons/blockchain_icon.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -148,7 +299,7 @@
                         <DropShadow height="10.0" radius="4.5" width="10.0" />
                      </effect>
                   </Label>
-                  <JFXButton fx:id="btn_menu_home" alignment="BASELINE_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="230.0" ripplerFill="WHITE" styleClass="menu-button" text="Home" textFill="#364252ea">
+                  <JFXButton fx:id="btn_menu_home" alignment="BASELINE_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="230.0" ripplerFill="WHITE" styleClass="menu-button" text="Acceuil" textFill="#364252ea">
                      <font>
                         <Font name="SansSerif Regular" size="18.0" />
                      </font>
@@ -211,7 +362,7 @@
                         <Insets left="10.0" right="10.0" top="10.0" />
                      </padding>
                   </JFXButton>
-                  <JFXButton fx:id="btn_menu_smct" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="210.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="230.0" ripplerFill="WHITE" styleClass="menu-button" text="SmartContrat" textFill="#364252ea">
+                  <JFXButton fx:id="btn_menu_smct" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="210.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="230.0" ripplerFill="WHITE" styleClass="menu-button" text="Smart Contrat" textFill="#364252ea">
                      <font>
                         <Font name="SansSerif Regular" size="18.0" />
                      </font>
@@ -256,6 +407,16 @@
                         <Insets left="10.0" right="10.0" top="10.0" />
                      </padding>
                   </JFXButton>
+                  <Label text="Synchronisation">
+                     <VBox.margin>
+                        <Insets top="125.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ProgressBar prefHeight="10.0" prefWidth="230.0" progress="0.72">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ProgressBar>
                </children>
             </VBox>
          </children></JFXDrawer>
