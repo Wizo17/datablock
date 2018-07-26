@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" prefHeight="540.0" prefWidth="780.0" styleClass="parent" stylesheets="@styles/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.controllers.HomeController">
+   <children>
+      <JFXButton alignment="CENTER" layoutX="743.0" layoutY="7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#close_app" prefHeight="30.0" prefWidth="30.0" ripplerFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" styleClass="top-button">
+               <image>
+                  <Image url="@icons/close.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton alignment="CENTER" layoutX="713.0" layoutY="7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#minimize_app" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" styleClass="top-button">
+               <image>
+                  <Image url="@icons/minus.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <AnchorPane layoutX="231.0" layoutY="45.0" prefHeight="495.0" prefWidth="549.0" style="-fx-background-color: #fff;">
+         <children>
+            <Pane fx:id="pan_home" layoutX="-6.0" prefHeight="495.0" prefWidth="555.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-6.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="225.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/cash_icon.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="213.0" layoutY="222.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="74.0" text="34.7" textFill="#ff6007">
+                     <font>
+                        <Font name="SansSerif Regular" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="66.0" layoutY="275.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="418.0" text="cf23df2207d99a74fbe169e3eba035e633b65d94" textFill="#09a428">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="284.0" layoutY="222.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="52.0" text="Btc">
+                     <font>
+                        <Font name="SansSerif Regular" size="24.0" />
+                     </font>
+                  </Label>
+                  <JFXButton buttonType="RAISED" layoutX="67.0" layoutY="350.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="200.0" ripplerFill="WHITE" styleClass="home-button" text="Envoyé" textFill="WHITE">
+                     <font>
+                        <Font name="SansSerif Regular" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/icons8_Sent_100px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="283.0" layoutY="350.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="200.0" ripplerFill="WHITE" styleClass="home-button" text="Recevoir" textFill="WHITE">
+                     <font>
+                        <Font name="SansSerif Regular" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/icons8_Download_104px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane fx:id="pan_trans" prefHeight="495.0" prefWidth="549.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="23.0" layoutY="22.0" text="Transaction" textFill="#09a428">
+                     <font>
+                        <Font name="SansSerif Regular" size="24.0" />
+                     </font>
+                  </Label>
+                  <TableView layoutX="23.0" layoutY="69.0" prefHeight="372.0" prefWidth="503.0">
+                    <columns>
+                      <TableColumn prefWidth="102.0" text="Date" />
+                      <TableColumn prefWidth="115.0" text="Type" />
+                        <TableColumn prefWidth="198.0" text="Adresse" />
+                        <TableColumn prefWidth="87.0" text="Montant" />
+                    </columns>
+                  </TableView>
+               </children></Pane>
+            <Pane fx:id="pan_file" prefHeight="495.0" prefWidth="549.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <JFXButton layoutX="117.0" layoutY="22.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="200.0" ripplerFill="WHITE" style="-fx-border-color: #ff6007;" text="IMPORT CONFIG" textFill="#ff6007">
+                     <font>
+                        <Font name="SansSerif Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="331.0" layoutY="22.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="200.0" ripplerFill="WHITE" styleClass="home-button" text="AJOUTER AU DRIVE" textFill="WHITE">
+                     <font>
+                        <Font name="SansSerif Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="27.0" layoutY="93.0" text="Stockage" textFill="#09a428">
+                     <font>
+                        <Font name="SansSerif Regular" size="24.0" />
+                     </font>
+                  </Label>
+                  <TableView layoutX="27.0" layoutY="138.0" prefHeight="329.0" prefWidth="503.0">
+                    <columns>
+                      <TableColumn prefWidth="62.0" text="Index" />
+                      <TableColumn prefWidth="81.0" text="Statut" />
+                        <TableColumn prefWidth="120.0" text="Location" />
+                        <TableColumn prefWidth="91.0" text="Uptime" />
+                        <TableColumn prefWidth="67.0" text="Pairs" />
+                        <TableColumn prefWidth="81.0" text="Partage" />
+                    </columns>
+                  </TableView>
+               </children>
+            </Pane>
+         </children></AnchorPane>
+      <JFXDrawer fx:id="drawer" prefHeight="540.0" prefWidth="230.0" style="-fx-background-color: #f0f0f0;" styleClass="trans-pane">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #f0f0f0;" styleClass="trans-pane">
+               <children>
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="230.0" style="-fx-background-color: #fff;" text="DataBlock" textFill="#ff6007">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/bitcoin_logo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="SansSerif Bold" size="22.0" />
+                     </font>
+                     <effect>
+                        <DropShadow height="10.0" radius="4.5" width="10.0" />
+                     </effect>
+                  </Label>
+                  <JFXButton fx:id="btn_menu_home" alignment="BASELINE_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="230.0" ripplerFill="WHITE" styleClass="menu-button" text="Home" textFill="#364252ea">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/icons8_Home_Page_100px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_menu_trans" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="75.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="230.0" ripplerFill="WHITE" styleClass="menu-button" text="Transaction" textFill="#364252ea">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/icons8_Data_Transfer_100px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_menu_file" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="120.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="230.0" ripplerFill="WHITE" styleClass="menu-button" text="Fichier" textFill="#364252ea">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/icons8_File_100px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_menu_host" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="165.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="230.0" ripplerFill="WHITE" styleClass="menu-button" text="Hébergement" textFill="#364252ea">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/icons8_FTP_Server_100px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_menu_smct" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="210.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="230.0" ripplerFill="WHITE" styleClass="menu-button" text="SmartContrat" textFill="#364252ea">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/icons8_Handshake_100px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_menu_setting" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="255.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="230.0" ripplerFill="WHITE" styleClass="menu-button" text="Paramètre" textFill="#364252ea">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/icons8_Settings_104px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_menu_help" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="300.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="230.0" ripplerFill="WHITE" styleClass="menu-button" text="Aide" textFill="#364252ea">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/icons8_Help_100px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children></JFXDrawer>
+   </children>
+</AnchorPane>
