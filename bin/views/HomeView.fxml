@@ -87,12 +87,12 @@
                         <Font name="SansSerif Regular" size="24.0" />
                      </font>
                   </Label>
-                  <TableView layoutX="23.0" layoutY="69.0" prefHeight="372.0" prefWidth="503.0">
+                  <TableView fx:id="tbv_transaction" layoutX="23.0" layoutY="69.0" prefHeight="372.0" prefWidth="503.0">
                     <columns>
-                      <TableColumn prefWidth="102.0" text="Date" />
-                      <TableColumn prefWidth="115.0" text="Type" />
-                        <TableColumn prefWidth="198.0" text="Adresse" />
-                        <TableColumn prefWidth="87.0" text="Montant" />
+                      <TableColumn fx:id="tbc_date_trans" prefWidth="102.0" text="Date" />
+                      <TableColumn fx:id="tbc_type_trans" prefWidth="115.0" text="Type" />
+                        <TableColumn fx:id="tbc_adresse_trans" prefWidth="198.0" text="Adresse" />
+                        <TableColumn fx:id="tbc_montant_trans" prefWidth="87.0" text="Montant" />
                     </columns>
                   </TableView>
                </children></Pane>
